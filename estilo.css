@@ -733,6 +733,7 @@ h1 {
   grid-row: 2/3;
   font-size: 18px;
   margin-left: 5%;
+  text-align: center;
 }
 
 .precio {
