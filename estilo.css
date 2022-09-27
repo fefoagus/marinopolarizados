@@ -43,7 +43,7 @@ body {
 /*    -------------------contactooooooooooos--------- */
 .mapa {
   width: 90%;
-  margin: 0px auto 20px auto;
+  margin: 40px auto 20px auto;
   grid-column: 1/5;
   border-radius: 10px;
   box-shadow: 20px 20px 30px #bebebe, -20px -20px 30px #ffffff;
@@ -61,7 +61,7 @@ body {
 }
 
 .cont {
-  margin: 20px 0px;
+  margin: 10px auto;
   font-size: 40px;
   text-align: center;
 }
@@ -102,12 +102,12 @@ textarea {
   grid-row: 1/span 3;
   width: 90%;
   grid-column: 1/5;
-  margin: 80px auto 40px auto;
+  margin: 80px auto 0px auto;
   padding: 0px 10px;
   background: linear-gradient(145deg, #cacaca, #a0b8c4);
   box-shadow: 20px 20px 35px #bebebe, -20px -20px 35px #ffffff;
   border-radius: 10PX;
-  height: 85%;
+  height: auto;
 }
 
 form input {
@@ -132,6 +132,7 @@ form input {
 
 .tele {
   text-align: center;
+  margin: auto;
 }
 
 /*    -------------------trabajos--------- */
@@ -312,7 +313,7 @@ form input {
 .contenedor {
   overflow: auto;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   min-height: calc(100vh - 60px - 0px);
 }
@@ -473,6 +474,23 @@ h1 {
   background: #3b5998;
 }
 
+
+.social-button--youtube {
+  color: #ff0000 !important;
+}
+
+.social-button--youtube::after {
+  background: #ff0000;
+}
+
+.social-button--titok {
+  color: #46daee !important;
+}
+
+.social-button--titok::after {
+  background: #46daee;
+}
+
 .social-button--instagram {
   color: #c13584 !important;
 }
@@ -481,6 +499,34 @@ h1 {
   background: #c13584;
 }
 
+.btn-wsp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: all 300ms ease;
+}
+
+.btn-wsp:hover {
+  background: #20ba5a;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+  .btn-wsp {
+    width: 63px;
+    height: 63px;
+    line-height: 66px;
+  }
+}
 
 .testimonio {
   grid-column: 1/5;
@@ -1221,6 +1267,7 @@ h1 {
     height: 200px;
     width: auto;
   }
+
   .lis11 {
     grid-column: 3/5;
     grid-row: 7/9;
@@ -1419,6 +1466,7 @@ h1 {
       width: auto;
       height: auto;
     }
+
     .lis11 {
       width: auto;
       height: auto;
@@ -1494,5 +1542,22 @@ h1 {
   .lista {
     height: 20px;
   }
-
+  .redes {
+margin-top: 50px;
+  }
+  
+  .contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px;
+  }
+  .cont{
+    font-size: 4rem;
+  }
+  .tele{
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
 }
