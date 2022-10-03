@@ -1458,6 +1458,7 @@ h1 {
   .contacto {
     height: 85%;
     margin-bottom: 50px;
+    padding: 20%; 
   }
 
   .mapa {
